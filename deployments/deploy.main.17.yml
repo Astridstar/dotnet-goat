@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: dotnet-goat
+ namespace: default
+spec:
+ containers:
+ - name: dotnet-goat-pod
+   image: pipelineciacr.azurecr.io/dotnet-goat-main:0.0.17
+#   image: pipelineciacr.azurecr.io/<image-name>:<image-tag>
+#   image: pipelineciacr.azurecr.io/java-goat-dev:0.0.4
+---
